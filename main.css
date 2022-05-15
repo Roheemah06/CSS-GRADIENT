@@ -1,0 +1,45 @@
+
+.linear{
+  border:2px solid black;
+  width:400px;
+  height: 400px;
+  background-image: linear-gradient( to right,red,orange,yellow,green, blue,indigo,violet);
+  margin-top: 60px;
+  border-radius: 40px;
+  margin-left: 60px;
+
+}
+.radial{
+  border:2px solid black;
+  width:400px;
+  height: 400px;
+  background-image: radial-gradient(red,yellow,green);
+  margin-top: 70px;
+  border-radius: 40px;
+}
+.gradient p{
+  text-align: left;
+  font-size: 40px;
+  color: brown;
+  margin-top: -50px;
+}
+.gradient p:hover{
+  color: blue;
+  font-size: 40px;
+}
+
+.gradient{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+@media(max-width:960px){
+.gradient{
+  display: grid;
+  grid-template-columns: 100%;
+
+}
+.radial{
+  margin-left: 60px;
+}
+}
